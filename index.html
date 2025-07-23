@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omar Samir | Front-End Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #2a2f47;
+      font-family: 'Poppins', sans-serif;
+      color: azure;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .omar {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .nav {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav li a {
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    .nav li a:hover {
+      color: #00e0ff;
+    }
+
+    /* Hero */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .heroimg {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Services & Projects */
+    .services {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .services-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .service-box {
+      background-color: aliceblue;
+      color: #2a2f47;
+      width: 350px;
+      border-radius: 2rem;
+      overflow: hidden;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .service-box img {
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .service-text {
+      padding: 1rem;
+    }
+
+    .service-text h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .boton-elegante {
+      padding: 15px 30px;
+      border: 2px solid #2c2c2c;
+      background-color: #1a1a1a;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 30px;
+      font-weight: bold;
+      margin: 2rem auto 0;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease;
+    }
+
+    .boton-elegante::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 70%);
+      transform: scale(0);
+      transition: transform 0.5s ease;
+    }
+
+    .boton-elegante:hover::after {
+      transform: scale(4);
+    }
+
+    .boton-elegante:hover {
+      border-color: #666666;
+      background: #292929;
+    }
+
+    /* Contact */
+    #contact {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    #contact img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 1rem;
+      margin-left: 41rem;
+    }
+
+    #contact a {
+      color: #25D366;
+      font-weight: bold;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .heroimg {
+        width: 100%;
+        height: auto;
+      }
+
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .nav {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .boton-elegante {
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-text h2 {
+        font-size: 1.8rem;
+      }
+
+      .nav li a {
+        font-size: 1rem;
+      }
+
+      .service-box {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="header">
+      <h1 class="omar">omar</h1>
+      <ul class="nav">
+        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="https://wa.me/201060472661">Hire Me</a></li>
+        <li><a href="#projects">My Recent Works</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="ChatGPT Image Jul 23, 2025, 10_05_22 PM.png" alt="Omar Front-End Developer" class="heroimg">
+    <div class="hero-text">
+      <h2>Hi, I’m Omar 👋</h2>
+      <p>
+        I’m a passionate <strong>Front-End Developer</strong> who loves creating modern, responsive, 
+        and user-friendly web experiences.
+      </p>
+      <p>
+        I specialize in HTML, CSS, JavaScript and React.js. I build clean and scalable web apps.
+      </p>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h2 class="services-title">Services</h2>
+    <div class="services-container">
+      <div class="service-box">
+        <img src="ص.png" alt="Web Design">
+        <div class="service-text">
+          <h3>Web Designing</h3>
+          <p>I create modern, responsive, and clean websites that work smoothly across all devices and screen sizes.</p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <img src="ChatGPT Image Jul 23, 2025, 10_47_01 PM.png" alt="Interactive Websites">
+        <div class="service-text">
+          <h3>Interactive Websites</h3>
+          <p>I build dynamic, engaging websites with animations and effects that enhance user interaction and experience.</p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <img src="ChatGPT Image Jul 23, 2025, 10_47_05 PM.png" alt="UI Fixes">
+        <div class="service-text">
+          <h3>UI Fixes</h3>
+          <p>I fix UI/UX issues, improve layouts, and make interfaces more user-friendly, intuitive, and visually appealing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="projects">
+    <h2 class="services-title">My Projects</h2>
+    <div class="services-container">
+      <div class="service-box">
+        <img src="Screenshot (300).png" alt="Car Admin Project">
+        <div class="service-text">
+          <h3>Car Management Website</h3>
+          <p>
+            Fully responsive website with admin panel to manage cars without coding. Clean UI and mobile-friendly.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <img src="Screenshot (125).png" alt="Pet Store Project">
+        <div class="service-text">
+          <h3>Pet Store Website</h3>
+          <p>
+            Modern responsive store with admin tools. Showcases pets, categories, and services page. Easy to update.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <button class="boton-elegante" onclick="window.location.href='https://oma396.github.io/gallary/'">
+      View My All Projects
+    </button>
+  </section>
+
+  <section id="contact">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+    <h2 style="color: #ccc;">Contact Me</h2>
+    <p>Contact me on <strong style="color: #25D366;">WhatsApp</strong></p>
+    <p>📞 <a href="https://wa.me/201060472661" target="_blank">+20 106 047 2661</a></p>
+  </section>
+</body>
+</html>

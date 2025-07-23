@@ -1,0 +1,58 @@
+  body {
+      background-color: #2a2f47;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+      color: azure;
+      font-size: 2rem;
+      list-style-type: none;
+    }
+
+    /* كلمة omar */
+    .omar {
+      font-size: 2.5rem;
+      font-weight: bold;
+     
+      text-decoration-thickness: 3px; /* سمك الخط */
+      text-underline-offset: 5px; /* المسافة بين النص والخط */
+      color: azure;
+      transition: color 0.3s ease;
+      color:black
+    }
+
+    
+    /* قائمة الروابط */
+    .nav {
+      display: flex;
+      gap: 2rem;
+      font-size: 1.2rem;
+    }
+
+    .h:hover {
+      color: azure;
+      text-decoration: none; /* نشيل الخط الافتراضي */
+      transition: color 0.3s ease;
+    }
+
+    .m:hover {
+      color: black; /* لما تمرر الماوس */
+    }
+    .h:hover{
+         color: black;
+    }
+      .c:hover{
+         color: black;
+    }
+    .heroimg{
+        width: 500px;
+        height: 500px;
+        margin-left: 8rem;
+    }
